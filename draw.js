@@ -58,9 +58,12 @@ document.getElementById("clear").style.display="block";
             r=e.getAttribute("id");
         }
     })
-     can.addEventListener("mousedown", init);
+        can.addEventListener("mousedown", init);
+        can.addEventListener("touchstart", init);
         can.addEventListener("mousemove", draw);
+        can.addEventListener("touchmove", draw);
         can.addEventListener("mouseup", stop);
+        can.addEventListener("touchend", stop);
 };
 
 
